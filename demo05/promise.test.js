@@ -11,3 +11,4 @@ describe('promise.test.js - 异步测试', function() {
       });
   });
 });
+// 我的理解是Promise是同步的，所以不需要done參數

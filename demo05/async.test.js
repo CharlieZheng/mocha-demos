@@ -6,8 +6,10 @@ describe('async.test.js - 异步测试', function() {
     request
       .get('https://api.github.com')
       .end(function(err, res){
+          console.log("Hello");
         expect(res).to.be.an('object');
         done();
       });
   });
 });
+// 我的理解是end是異步的，所以需要done參數
